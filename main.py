@@ -88,7 +88,7 @@ except:
     logging.error("Error during authentication")
 
 try:
-    api.update_with_media("photos/image.jpg", "")
+    api.update_with_media("photos/image.jpg", "Have a nice day \U0001F64F")
     logging.info("Tweet has been sucessfuly sent")
 except:
     logging.error("Error while sending a tweet")
