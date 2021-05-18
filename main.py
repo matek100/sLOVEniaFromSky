@@ -42,7 +42,7 @@ while True:
         break
 
 
-im = Image.open("photos/img" + file_number + ".tif")
+im = Image.open("photos/img" + str(file_number) + ".tif")
 logging.info("Selected file is: img" + str(file_number) + ".tif")
 
 
@@ -88,7 +88,7 @@ except:
     logging.error("Error during authentication")
 
 try:
-    api.update_with_media("iphotos/image.jpg", "")
+    api.update_with_media("photos/image.jpg", "")
     logging.info("Tweet has been sucessfuly sent")
 except:
     logging.error("Error while sending a tweet")
